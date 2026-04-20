@@ -1,0 +1,181 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# ============================================================================
+# CRITICAL: ENVIRONMENT & CREDENTIALS - NEVER COMMIT THESE!
+# ============================================================================
+.env
+.env.local
+.env.*.local
+.env.*.php
+.env.production
+.env.development
+.env.staging
+backend/.env
+frontend/.env
+*.env.lock
+
+# Sensitive credential files
+*.key
+*.pem
+*.pfx
+*.p12
+secrets/
+credentials/
+*credentials.json
+*token.json
+.aws/
+.ssh/
+
+# ============================================================================
+# IDE AND EDITORS
+# ============================================================================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+.sublime-project
+.sublime-workspace
+*.iml
+
+# ============================================================================
+# DEPENDENCIES
+# ============================================================================
+node_modules/
+/node_modules
+vendor/
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# ============================================================================
+# BACKEND - LARAVEL SPECIFIC
+# ============================================================================
+backend/vendor/
+backend/node_modules/
+backend/storage/
+backend/bootstrap/cache/
+backend/storage/logs/*
+backend/storage/app/*
+!backend/storage/.gitkeep
+backend/public/test-db.php
+backend/public/debug.php
+backend/public/clear.php
+backend/public/hot
+backend/database/database.sqlite
+
+# ============================================================================
+# FRONTEND - REACT SPECIFIC
+# ============================================================================
+frontend/build/
+frontend/dist/
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/coverage/
+
+# ============================================================================
+# BUILD & PRODUCTION
+# ============================================================================
+dist/
+build/
+.next/
+/out/
+next-env.d.ts
+*.tsbuildinfo
+
+# ============================================================================
+# LOGS & DEBUG
+# ============================================================================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+*.log
+dump.rdb
+debug.log
+
+# ============================================================================
+# TESTING
+# ============================================================================
+/coverage
+.nyc_output/
+*.lcov
+
+# ============================================================================
+# PYTHON & VENV
+# ============================================================================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# ============================================================================
+# DEVELOPMENT TOOLS
+# ============================================================================
+.chainlit
+chainlit.md
+.ipynb_checkpoints/
+.jupyter_secret
+.ac
+
+# ============================================================================
+# DEPLOYMENT & CI/CD
+# ============================================================================
+.vercel
+.netlify
+.env.local.backup
+docker-compose.override.yml
+
+# ============================================================================
+# TEMPORARY & CACHE FILES
+# ============================================================================
+.cache/
+*.cache
+.temp/
+tmp/
+temp/
+
+# ============================================================================
+# ARCHIVE & LARGE FILES
+# ============================================================================
+**/*.zip
+**/*.tar.gz
+**/*.tar
+**/*.tgz
+**/*.rar
+*.pack
+*.deb
+*.dylib
+*.dmg
+
+# ============================================================================
+# OS SPECIFIC
+# ============================================================================
+.DS_Store
+Thumbs.db
+.AppleDouble
+.LSOverride
+._*
+
+# ============================================================================
+# MISC
+# ============================================================================
+.env.example.bak
+memory/test_credentials.md
+.AC
+android-sdk/-e

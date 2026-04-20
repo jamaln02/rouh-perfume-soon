@@ -1,0 +1,16 @@
+RewriteEngine On
+
+# إذا الطلب يبدأ بـ api → روّحه للـ Laravel
+RewriteCond %{REQUEST_URI} ^/api
+RewriteRule ^ public/index.php [L]
+
+# إذا الملف موجود → خليه يمر
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# إذا المجلد موجود → خليه يمر
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# باقي الطلبات → React
+RewriteRule ^ index.html [L]
