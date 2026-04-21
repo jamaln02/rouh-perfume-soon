@@ -6,7 +6,7 @@
 ![PHP Version](https://img.shields.io/badge/PHP-%3E%3D8.1-blue.svg)
 ![Node Version](https://img.shields.io/badge/Node-%3E%3D16-green.svg)
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
- 
+
 ---
 
 ## 📋 Table of Contents
@@ -376,6 +376,4 @@ This project is licensed under the MIT License - see LICENSE file for details.
 
 **Last Updated:** April 21, 2026
 #
-#   r o u h - p e r f u m e - s o o n 
- 
- 
+#
