@@ -9,7 +9,7 @@ import { RadioGroup, RadioGroupItem } from '../components/ui/radio-group';
 import axios from 'axios';
 import logo from '../assets/rouh-logo.png';
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "https://api.rouh.shop/api";
 
 const Survey = () => {
   const navigate = useNavigate();
