@@ -13,14 +13,14 @@ module.exports = {
     },
   },
 
-  // إعدادات Webpack
+  //  Webpack settings
   webpack: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
     },
 
     configure: (webpackConfig) => {
-      // تحسين أداء Watch Mode (تجاهل مجلدات غير ضرورية)
+      //   Watch Mode with Ignored Directories to Improve Performance 
       webpackConfig.watchOptions = {
         ...webpackConfig.watchOptions,
         ignored: [

@@ -12,7 +12,7 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function ($middleware) {
-        $middleware->api(prepend: HandleCors::class);   // هذا السطر المهم
+        $middleware->api(prepend: HandleCors::class);   //  Add CORS middleware to API routes 
     })
     ->withExceptions(function ($exceptions) {
         //

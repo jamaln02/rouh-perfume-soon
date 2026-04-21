@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Instagram, Facebook, MessageCircle, Mail, Phone } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '../components/ui/button';
+import logo from '../assets/rouh-logo.png';
+
 
 const ComingSoon = () => {
   const navigate = useNavigate();
@@ -62,14 +64,14 @@ const ComingSoon = () => {
             {/* Glow effect */}
             <div className="absolute inset-0 blur-[60px] opacity-30">
               <img 
-                src="https://customer-assets.emergentagent.com/job_rouh-opening/artifacts/edg3av89_logos-1-removebg-preview.png"
+                src={logo}
                 alt="Rouh Glow" 
                 className="w-80 h-80 md:w-[32rem] md:h-[32rem] lg:w-[36rem] lg:h-[36rem] object-contain mx-auto"
               />
             </div>
             {/* Main logo */}
             <img 
-              src="https://customer-assets.emergentagent.com/job_rouh-opening/artifacts/edg3av89_logos-1-removebg-preview.png"
+              src={logo}
               alt="Rouh Perfume Logo" 
               className="relative w-80 h-80 md:w-[32rem] md:h-[32rem] lg:w-[36rem] lg:h-[36rem] object-contain drop-shadow-2xl animate-float"
             />
@@ -130,7 +132,7 @@ const ComingSoon = () => {
           
           <div className="flex gap-5 justify-center flex-wrap">
             <a
-              href="https://www.instagram.com/rouh_.perfume"
+              href="https://www.instagram.com/rouh_.parfum"
               target="_blank"
               rel="noopener noreferrer"
               className="group relative p-4 rounded-xl bg-white/80 backdrop-blur-sm border-2 border-[#2b0c10]/30 hover:border-[#bb8d4f] hover:bg-gradient-to-br hover:from-[#2b0c10] hover:to-[#bb8d4f] transition-all duration-500 shadow-lg hover:shadow-2xl hover:shadow-[#bb8d4f]/40 hover:scale-110 transform"

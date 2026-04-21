@@ -7,8 +7,9 @@ import { Label } from '../components/ui/label';
 import { Textarea } from '../components/ui/textarea';
 import { RadioGroup, RadioGroupItem } from '../components/ui/radio-group';
 import axios from 'axios';
+import logo from '../assets/rouh-logo.png';
 
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'https://api.rouh.shop/api';
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
 const Survey = () => {
   const navigate = useNavigate();
@@ -278,7 +279,7 @@ const Survey = () => {
         <div className="text-center mb-8">
           <div className="mb-4">
             <img 
-              src="https://customer-assets.emergentagent.com/job_rouh-opening/artifacts/edg3av89_logos-1-removebg-preview.png"
+              src={logo}
               alt="Rouh Logo" 
               className="w-20 h-20 md:w-24 md:h-24 object-contain mx-auto"
             />
